@@ -58,6 +58,14 @@ img {
     height: auto;
 }
 
+.bg-white {
+    background-color: $white !important;
+}
+
+.active-text {
+    color: $primary-purple !important;
+}
+
 /**
  * Typography
  *
@@ -81,19 +89,29 @@ img {
  */
 
 .nav-text {
-    font-weight: $font-bold;
-    color: $black;
-}
-.nav-text:hover {
-    color: $primary-green;
-}
-
-.navbar-light .navbar-toggler {
+    font-weight: $font-bold !important;
+    color: #000 !important;
 }
 
 .navbar-menu {
     color: $black;
     border-color: $white;
+}
+
+.uil-size {
+    font-size: $h2-font-size;
+    // color: #000;
+}
+
+.uil-app {
+    color: #000;
+    text-decoration: none;
+    border-color: #fff;
+    border-style: none;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #fff;
 }
 
 /**
@@ -117,7 +135,7 @@ footer {
 }
 
 .text-footer:hover {
-    color: #ecf0f1;
+    color: #d7dbdd;
 }
 
 .text-footer-copy {
@@ -125,6 +143,38 @@ footer {
 }
 
 /*==================== MEDIA QUERIES ====================*/
+
+@media screen and (max-width: 767px) {
+    .navbar-menu {
+        background-color: $white;
+        // padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 0 0 1.5rem 1.5rem;
+        transition: 0.3s;
+    }
+    .grid {
+        display: grid;
+        gap: 1.5rem;
+    }
+
+    .nav-list {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 1rem !important;
+    }
+
+    .nav__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: $small-font-size;
+        color: #000 !important;
+        font-weight: $font-semi-bold;
+    }
+
+    .nav__link:hover {
+        color: $primary-purple;
+    }
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .responsive-m {
@@ -147,6 +197,22 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+    }
+
+    .nav__link {
+        font-weight: $font-bold !important;
+        color: #000 !important;
+    }
+    .nav__link:hover {
+        color: $primary-purple !important;
+    }
+
+    .uil-size {
+        display: none;
+    }
+
+    .shadow-sm {
+        box-shadow: none !important;
     }
 }
 

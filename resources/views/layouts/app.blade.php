@@ -15,7 +15,8 @@
 
 
     <!-- Fonts -->
-
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
 
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
@@ -27,14 +28,14 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm navbar-menu">
             <div class="container">
                 <a class="navbar-brand nav-text" href="{{ url('/') }}">
                     {{ 'William' }}
                 </a>
               
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <i class="fas fa-th-large"></i>
+                    <i class="uil uil-apps uil-size uil-app"></i>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -44,26 +45,26 @@
                     </ul>
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav ms-auto nav-list grid">
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link nav-text "  href="{{ url('/') }}">{{ __('Home') }}</a>
+                                <a class="nav-link nav__link"  href="{{ url('/') }}"><i class="uil-size uil uil-estate"></i>{{ __('Home') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="{{ url('/about') }}">{{ __('About') }}</a>
+                                <a class="nav-link nav__link " href="{{ url('/about') }}"><i class="uil-size uil uil-user"></i></i>{{ __('About') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="{{ url('/skills') }}">{{ __('Skills') }}</a>
+                                <a class="nav-link nav__link " href="{{ url('/skills') }}"><i class="uil-size uil uil-file-alt"></i></i>{{ __('Skills') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="{{ url('/services') }}">{{ __('Services') }}</a>
+                                <a class="nav-link nav__link " href="{{ url('/services') }}"><i class="uil-size uil uil-briefcase-alt"></i></i>{{ __('Services') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="{{ url('/portfolio') }}">{{ __('Porfolio') }}</a>
+                                <a class="nav-link nav__link " href="{{ url('/portfolio') }}"><i class="uil-size uil uil-scenery"></i></i>{{ __('Porfolio') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="{{ url('/contact') }}">{{ __('Contact') }}</a>
+                                <a class="nav-link nav__link " href="{{ url('/contact') }}"><i class="uil-size uil uil-message"></i></i>{{ __('Contact') }}</a>
                             </li>
                            
                             {{-- @if (Route::has('login'))
@@ -101,7 +102,7 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4 bg-white">
             @yield('content')
         </main>
 
