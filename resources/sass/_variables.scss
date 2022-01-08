@@ -1,0 +1,49 @@
+// Body
+$body-bg: #f8fafc;
+$header-height: 3rem;
+
+// Typography
+$font-family-sans-poppins: "Poppins", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+//Colors
+// $light-green: #27ae60;
+$primary-green: #57e089;
+$secondary-green: #50cd7e;
+$dark-green: #073a1d;
+$container-color: #fff;
+$black: #000;
+$white: #fff;
+
+$primary-purple: #6e57e6;
+
+/* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+$big-font-size: 2rem;
+$h1-font-size: 1.5rem;
+$h2-font-size: 1.25rem;
+$h3-font-size: 1.125rem;
+$normal-font-size: 0.938rem;
+$small-font-size: 0.813rem;
+$smaller-font-size: 0.75rem;
+
+/*========== Font weight ==========*/
+$font-medium: 500;
+$font-semi-bold: 600;
+$font-bold: 900;
+
+/*========== Margenes Bottom ==========*/
+/* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+$mb-0-25: 0.25rem;
+$mb-0-5: 0.5rem;
+$mb-0-75: 0.75rem;
+$mb-1: 1rem;
+$mb-1-5: 1.5rem;
+$mb-2: 2rem;
+$mb-2-5: 2.5rem;
+$mb-3: 3rem;
+
+/*========== z index ==========*/
+$z-tooltip: 10;
+$z-fixed: 100;
+$z-modal: 1000;

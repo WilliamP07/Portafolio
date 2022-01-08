@@ -1,0 +1,175 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// Google Font Poppins
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+//Fontawesome
+@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@import "node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+
+/**
+ * BASES
+ *
+ * -------------------------------------------------------------------
+ */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-family-sans-poppins;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: $font-semi-bold;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/**
+ * Typography
+ *
+ * -------------------------------------------------------------------
+ */
+
+.medium {
+    font-weight: $font-medium;
+}
+.semi-bold {
+    font-weight: $font-semi-bold;
+}
+.bold {
+    font-weight: $font-semi-bold;
+}
+
+/**
+ * Navbar
+ *
+ * -------------------------------------------------------------------
+ */
+
+.nav-text {
+    font-weight: $font-bold;
+    color: $black;
+}
+.nav-text:hover {
+    color: $primary-green;
+}
+
+.navbar-light .navbar-toggler {
+}
+
+.navbar-menu {
+    color: $black;
+    border-color: $white;
+}
+
+/**
+ * Footer
+ *
+ * -------------------------------------------------------------------
+ */
+
+footer {
+    flex-shrink: 0;
+}
+
+.bg-footer {
+    // background-color: $primary-green;
+    background-color: $primary-purple;
+}
+
+.text-footer {
+    color: $white;
+    font-weight: $font-semi-bold;
+}
+
+.text-footer:hover {
+    color: #ecf0f1;
+}
+
+.text-footer-copy {
+    color: #d7dbdd;
+}
+
+/*==================== MEDIA QUERIES ====================*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .responsive-m {
+        padding-top: 1.5rem !important;
+        padding-left: 1.5rem !important;
+    }
+
+    .p-icon {
+        padding: 8px 16px !important;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 575px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .align-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .aling-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+    $big-font-size: 3rem;
+    $h1-font-size: 2.25rem;
+    $h2-font-size: 1.5rem;
+    $h3-font-size: 1.25rem;
+    $normal-font-size: 1rem;
+    $small-font-size: 0.875rem;
+    $smaller-font-size: 0.813rem;
+}
