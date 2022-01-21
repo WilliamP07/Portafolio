@@ -15,8 +15,6 @@
 
 
     <!-- Fonts -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
 
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
@@ -35,7 +33,7 @@
                 </a>
               
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <i class="uil uil-apps uil-size uil-app"></i>
+                    <i class="bi bi-grid-fill uil-size uil-app"></i>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -49,22 +47,22 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link nav__link"  href="{{ url('/') }}"><i class="uil-size uil uil-estate"></i>{{ __('Home') }}</a>
+                                <a class="nav-link nav__link"  href="{{ url('/') }}"><i class="uil-size bi bi-house-door-fill"></i>{{ __('Home') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav__link " href="{{ url('/about') }}"><i class="uil-size uil uil-user"></i></i>{{ __('About') }}</a>
+                                <a class="nav-link nav__link " href="{{ url('/about') }}"><i class="uil-size bi bi-person-fill"></i>{{ __('About') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav__link " href="{{ url('/skills') }}"><i class="uil-size uil uil-file-alt"></i></i>{{ __('Skills') }}</a>
+                                <a class="nav-link nav__link " href="{{ url('/skills') }}"><i class="uil-size bi bi-file-earmark-code-fill"></i>{{ __('Skills') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav__link " href="{{ url('/services') }}"><i class="uil-size uil uil-briefcase-alt"></i></i>{{ __('Services') }}</a>
+                                <a class="nav-link nav__link " href="{{ url('/services') }}"><i class="uil-size bi bi-briefcase-fill"></i>{{ __('Services') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav__link " href="{{ url('/portfolio') }}"><i class="uil-size uil uil-scenery"></i></i>{{ __('Porfolio') }}</a>
+                                <a class="nav-link nav__link " href="{{ url('/portfolio') }}"><i class="uil-size bi bi-image-fill"></i>{{ __('Porfolio') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav__link " href="{{ url('/contact') }}"><i class="uil-size uil uil-message"></i></i>{{ __('Contact') }}</a>
+                                <a class="nav-link nav__link " href="{{ url('/contact') }}"><i class="uil-size bi bi-envelope-fill"></i>{{ __('Contact') }}</a>
                             </li>
                            
                             {{-- @if (Route::has('login'))
@@ -115,23 +113,23 @@
                         <h1 class="text-footer">William</h1>
                         <p class="mb-0 text-footer">Frontend developer</p>
                     </div>
-                    <div class="col-12 col-md-4 col-sm-8 pt-5 pb-2 responsive-m">
+                    <div class="col-12 col-md-4 col-sm-8 pt-4 pb-1 responsive-m">
                         <div class="row">
                             <div class=" col-md-4 col-sm-4"><a class="nav-link text-footer p-0 pt-1 pb-1" href="{{ url('/services') }}">Services</a></div>
                             <div class=" col-md-4 col-sm-4"><a class="nav-link text-footer p-0 pt-1 pb-1" href="{{ url('/portfolio') }}">Portfolio</a></div>
                             <div class=" col-md-4 col-sm-4"><a class="nav-link text-footer p-0 pt-1 pb-1" href="{{ url('/contact') }}">Contact</a></div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 col-sm-4 pt-5 pb-2 responsive-m align-icon">
+                    <div class="col-12 col-md-4 col-sm-4 pt-4 pb-1 responsive-m align-icon">
                         <div class="row">
-                            <div class="col-1 col-md-3 col-sm-3 p-0"><a class="nav-link text-footer p-icon" href="https://www.facebook.com/William.PinedaT" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a></div>
-                            <div class="col-1 col-md-3 col-sm-3 p-0"><a class="nav-link text-footer p-icon" href="https://www.instagram.com/william07_z/?hl=es-la" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></div>
-                            <div class="col-1 col-md-3 col-sm-3 p-0"><a class="nav-link text-footer p-icon" href="https://twitter.com/WillPineda18" target="_blank"><i class="fab fa-twitter fa-lg"></i></a></div>
-                            <div class="col-1 col-md-3 col-sm-3 p-0"><a class="nav-link text-footer p-icon" href="https://www.youtube.com/channel/UCG_C-Rz3EPxsjlojS0VZuuA/featured" target="_blank"><i class="fab fa-youtube fa-lg"></i></a></div>
+                            <div class="col-1 col-md-3 col-sm-3 p-0"><a class="nav-link text-footer icon-size p-icon" href="https://www.facebook.com/William.PinedaT" target="_blank"><i class="bi bi-facebook"></i></a></div>
+                            <div class="col-1 col-md-3 col-sm-3 p-0"><a class="nav-link text-footer icon-size p-icon" href="https://www.instagram.com/william07_z/?hl=es-la" target="_blank"><i class="bi bi-instagram"></i></i></a></div>
+                            <div class="col-1 col-md-3 col-sm-3 p-0"><a class="nav-link text-footer icon-size p-icon" href="https://twitter.com/WillPineda18" target="_blank"><i class="bi bi-twitter"></i></a></div>
+                            <div class="col-1 col-md-3 col-sm-3 p-0"><a class="nav-link text-footer icon-size p-icon" href="https://www.youtube.com/channel/UCG_C-Rz3EPxsjlojS0VZuuA/featured" target="_blank"><i class="bi bi-youtube"></i></a></div>
                         </div>
                     </div>
                 </div>
-                <div class="pt-4 pb-3">
+                <div class="pt-3 pb-2">
                     <p class="text-center text-footer-copy">
                       &copy; 2022 Todos Los Derechos Reservados | William Pineda
                     </p>
