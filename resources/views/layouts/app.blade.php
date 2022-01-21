@@ -109,18 +109,18 @@
         <footer class="bg-footer footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-4 col-sm-4 pt-5 pb-2 responsive-m">
+                    <div class="col-12 col-md-4 col-sm-4 pt-4 pb-2 responsive-m">
                         <h1 class="text-footer">William</h1>
                         <p class="mb-0 text-footer">Frontend developer</p>
                     </div>
-                    <div class="col-12 col-md-4 col-sm-8 pt-4 pb-1 responsive-m">
+                    <div class="col-12 col-md-4 col-sm-8 pt-3 pb-1 responsive-m">
                         <div class="row">
                             <div class=" col-md-4 col-sm-4"><a class="nav-link text-footer p-0 pt-1 pb-1" href="{{ url('/services') }}">Services</a></div>
                             <div class=" col-md-4 col-sm-4"><a class="nav-link text-footer p-0 pt-1 pb-1" href="{{ url('/portfolio') }}">Portfolio</a></div>
                             <div class=" col-md-4 col-sm-4"><a class="nav-link text-footer p-0 pt-1 pb-1" href="{{ url('/contact') }}">Contact</a></div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 col-sm-4 pt-4 pb-1 responsive-m align-icon">
+                    <div class="col-12 col-md-4 col-sm-4 pt-3 pb-1 responsive-m align-icon">
                         <div class="row">
                             <div class="col-1 col-md-3 col-sm-3 p-0"><a class="nav-link text-footer icon-size p-icon" href="https://www.facebook.com/William.PinedaT" target="_blank"><i class="bi bi-facebook"></i></a></div>
                             <div class="col-1 col-md-3 col-sm-3 p-0"><a class="nav-link text-footer icon-size p-icon" href="https://www.instagram.com/william07_z/?hl=es-la" target="_blank"><i class="bi bi-instagram"></i></i></a></div>
@@ -129,8 +129,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="pt-3 pb-2">
-                    <p class="text-center text-footer-copy">
+                <div class="pt-2 pb-2">
+                    <p class="text-center text-footer-copy mb-0">
                       &copy; 2022 Todos Los Derechos Reservados | William Pineda
                     </p>
                 </div>
