@@ -30,7 +30,7 @@ html {
     scroll-behavior: smooth;
 }
 main {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 35.3vh);
 }
 
 body {
@@ -88,6 +88,7 @@ img {
 .nav-text {
     font-weight: $font-bold !important;
     color: #000 !important;
+    font-size: $h2-font-size;
 }
 
 .navbar-menu {
@@ -251,7 +252,10 @@ footer {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 575px) {
+@media only screen and (max-width: 570px) {
+    main {
+        height: calc(80vh - 80px);
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
