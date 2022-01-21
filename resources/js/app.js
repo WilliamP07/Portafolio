@@ -1,3 +1,4 @@
+
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -28,6 +29,12 @@ files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-const app = new Vue({
+
+import Vuetify from 'vuetify';
+   Vue.use(Vuetify); 
+
+   const app = new Vue({
     el: '#app',
+    vuetify: new Vuetify(),
+   
 });

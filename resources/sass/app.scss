@@ -1,5 +1,5 @@
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Nunito");
+// @import url("https://fonts.googleapis.com/css?family=Nunito");
 
 // Google Font Poppins
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
@@ -9,12 +9,10 @@
 
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
 
-//Fontawesome
-@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
-@import "node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
-@import "node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+// Vuetify
+@import "~vuetify/dist/vuetify.min.css";
 
 /**
  * BASES
@@ -30,6 +28,9 @@
 
 html {
     scroll-behavior: smooth;
+}
+main {
+    height: calc(100vh - 80px);
 }
 
 body {
@@ -60,10 +61,6 @@ img {
 
 .bg-white {
     background-color: $white !important;
-}
-
-.active-text {
-    color: $primary-purple !important;
 }
 
 /**
@@ -103,6 +100,10 @@ img {
     // color: #000;
 }
 
+.icon-size {
+    font-size: $h2-font-size;
+    padding-top: 0;
+}
 .uil-app {
     color: #000;
     text-decoration: none;
@@ -112,6 +113,68 @@ img {
 
 .navbar-light .navbar-toggler {
     border-color: #fff;
+}
+
+/**
+ * Home
+ *
+ * -------------------------------------------------------------------
+ */
+
+.home__container {
+    gap: 1rem;
+}
+
+.home__content {
+    grid-template-columns: 0.5fr 3fr;
+    padding-top: 3.5rem;
+    align-items: center;
+}
+
+.button {
+    display: inline-block;
+    background-color: $primary-purple;
+    color: $white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: $font-medium;
+}
+
+.button:hover {
+    color: $white;
+}
+
+.title-home {
+    font-size: $big-font-size;
+}
+
+.subtitle-home {
+    font-size: $normal-font-size;
+    color: #d7dbdd;
+}
+
+.no-list-style {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.home__social-icon {
+    color: $primary-purple;
+    font-size: $h2-font-size;
+    padding: 0.5rem;
+}
+
+.home__social-icon:hover {
+    color: $primary-purple;
+}
+
+.home__blob {
+    width: 250px;
+    fill: $primary-purple;
+}
+
+.home__blob-img {
+    width: 170px;
 }
 
 /**

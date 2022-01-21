@@ -17399,10 +17399,11 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
 }
 
-/* Font size for large devices */
-/*========== Variables Dark theme ==========*/
-/*========== Button Dark/Light ==========*/
-/*==================== BASE ====================*/
+/**
+ * BASES
+ *
+ * -------------------------------------------------------------------
+ */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -17414,7 +17415,9 @@ html {
 }
 
 body {
-  font-family: var("Poppins", sans-serif);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 h1, .h1,
@@ -17440,49 +17443,163 @@ img {
   height: auto;
 }
 
-/*==================== Fonts ====================*/
+.bg-white {
+  background-color: #fff !important;
+}
+
+.active-text {
+  color: #6e57e6 !important;
+}
+
+/**
+ * Typography
+ *
+ * -------------------------------------------------------------------
+ */
 .medium {
-  font-weight: var(500);
+  font-weight: 500;
 }
 
 .semi-bold {
-  font-weight: var(600);
+  font-weight: 600;
 }
 
 .bold {
-  font-weight: var(600);
+  font-weight: 600;
 }
 
+/**
+ * Navbar
+ *
+ * -------------------------------------------------------------------
+ */
 .nav-text {
-  font-weight: var(900);
-  color: var(#000);
+  font-weight: 900 !important;
+  color: #000 !important;
 }
 
-.nav-text:hover {
-  color: var(#229954);
+.navbar-menu {
+  color: #000;
+  border-color: #fff;
 }
 
-/*==================== LAYOUT ====================*/
-/*==================== NAV ====================*/
-/* show menu */
-/* Active link */
-/* Change background header */
-/*==================== HOME ====================*/
-/*==================== BUTTONS ====================*/
-/*==================== ABOUT ====================*/
-/*==================== SKILLS ====================*/
-/*==================== QUALIFICATION ====================*/
-/*==================== SERVICES ====================*/
-/* Active Modal */
-/*==================== PORTFOLIO ====================*/
-/*==================== PROJECT IN MIND ====================*/
-/*==================== TESTIMONIAL ====================*/
-/*==================== CONTACT ME ====================*/
-/*==================== FOOTER ====================*/
-/*========== SCROLL UP ==========*/
-/* Show scroll */
-/*========== SCROLL BAR ==========*/
+.uil-size {
+  font-size: 1.25rem;
+}
+
+.uil-app {
+  color: #000;
+  text-decoration: none;
+  border-color: #fff;
+  border-style: none;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #fff;
+}
+
+/**
+ * Footer
+ *
+ * -------------------------------------------------------------------
+ */
+footer {
+  flex-shrink: 0;
+}
+
+.bg-footer {
+  background-color: #6e57e6;
+}
+
+.text-footer {
+  color: #fff;
+  font-weight: 600;
+}
+
+.text-footer:hover {
+  color: #d7dbdd;
+}
+
+.text-footer-copy {
+  color: #d7dbdd;
+}
+
 /*==================== MEDIA QUERIES ====================*/
-/* For small devices */
-/* For medium devices */
-/* For large devices */
+@media screen and (max-width: 767px) {
+  .navbar-menu {
+    background-color: #fff;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 1.5rem 1.5rem;
+    transition: 0.3s;
+  }
+
+  .grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .nav-list {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1rem !important;
+  }
+
+  .nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.813rem;
+    color: #000 !important;
+    font-weight: 600;
+  }
+
+  .nav__link:hover {
+    color: #6e57e6;
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .responsive-m {
+    padding-top: 1.5rem !important;
+    padding-left: 1.5rem !important;
+  }
+
+  .p-icon {
+    padding: 8px 16px !important;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .align-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .nav__link {
+    font-weight: 900 !important;
+    color: #000 !important;
+  }
+
+  .nav__link:hover {
+    color: #6e57e6 !important;
+  }
+
+  .uil-size {
+    display: none;
+  }
+
+  .shadow-sm {
+    box-shadow: none !important;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .aling-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Font size for large devices */
