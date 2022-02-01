@@ -20,23 +20,14 @@
  * -------------------------------------------------------------------
  */
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
 html {
     scroll-behavior: smooth;
-}
-main {
-    height: calc(100vh - 35.3vh);
 }
 
 body {
     font-family: $font-family-sans-poppins;
-    display: flex;
-    flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
 h1,
@@ -122,16 +113,6 @@ img {
  * -------------------------------------------------------------------
  */
 
-.home__container {
-    gap: 1rem;
-}
-
-.home__content {
-    grid-template-columns: 0.5fr 3fr;
-    padding-top: 3.5rem;
-    align-items: center;
-}
-
 .button {
     display: inline-block;
     background-color: $primary-purple;
@@ -150,8 +131,12 @@ img {
 }
 
 .subtitle-home {
+    font-size: $h2-font-size;
+    color: $primary-purple;
+}
+
+.text-home {
     font-size: $normal-font-size;
-    color: #d7dbdd;
 }
 
 .no-list-style {
@@ -170,14 +155,47 @@ img {
 }
 
 .home__blob {
-    width: 250px;
+    width: 340px;
     fill: $primary-purple;
 }
 
 .home__blob-img {
-    width: 170px;
+    width: 160px;
 }
 
+/**
+ * About
+ *
+ * -------------------------------------------------------------------
+ */
+
+.about-img {
+    width: 200px;
+    border-radius: 0.5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.about_info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.about__info-name {
+    font-size: $smaller-font-size;
+}
+
+.about__info-title {
+    font-size: $h2-font-size;
+    font-weight: $font-semi-bold;
+}
+
+.about__info-title,
+.about__info-name {
+    display: block;
+    text-align: center;
+}
 /**
  * Footer
  *
@@ -187,6 +205,10 @@ img {
 footer {
     flex-shrink: 0;
 }
+
+// .m-footer {
+//     margin-top: 8rem;
+// }
 
 .bg-footer {
     // background-color: $primary-green;
@@ -238,6 +260,10 @@ footer {
     .nav__link:hover {
         color: $primary-purple;
     }
+
+    .movil {
+        display: none;
+    }
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -253,9 +279,9 @@ footer {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 570px) {
-    main {
-        height: calc(80vh - 80px);
-    }
+    // main {
+    //     height: calc(80vh - 80px);
+    // }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -280,6 +306,9 @@ footer {
 
     .shadow-sm {
         box-shadow: none !important;
+    }
+    .desktop {
+        display: none;
     }
 }
 
