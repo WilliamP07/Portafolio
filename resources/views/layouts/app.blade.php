@@ -11,7 +11,7 @@
 
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}" defer></script>
-    <script src="{{ asset('js/main.js') }}" defer></script>
+    <script src="{{ mix('js/main.js') }}" defer></script>
 
 
     <!-- Fonts -->

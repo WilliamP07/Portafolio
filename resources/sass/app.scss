@@ -115,7 +115,7 @@ img {
 
 .button {
     display: inline-block;
-    background-color: $primary-purple;
+    background-color: $primary-blue;
     color: $white;
     padding: 1rem;
     border-radius: 0.5rem;
@@ -132,7 +132,7 @@ img {
 
 .subtitle-home {
     font-size: $h2-font-size;
-    color: $primary-purple;
+    color: $primary-blue;
 }
 
 .text-home {
@@ -145,18 +145,18 @@ img {
 }
 
 .home__social-icon {
-    color: $primary-purple;
+    color: $primary-blue;
     font-size: $h2-font-size;
     padding: 0.5rem;
 }
 
 .home__social-icon:hover {
-    color: $primary-purple;
+    color: $primary-blue;
 }
 
 .home__blob {
     width: 340px;
-    fill: $primary-purple;
+    fill: $primary-blue;
 }
 
 .home__blob-img {
@@ -196,6 +196,120 @@ img {
     display: block;
     text-align: center;
 }
+
+/**
+ * Skills
+ *
+ * -------------------------------------------------------------------
+ */
+.skills__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.skills__icon,
+.skills__arrow {
+    font-size: 2rem;
+    color: $primary-blue;
+}
+
+.skills__icon {
+    margin-right: 1rem;
+}
+
+.skills__title {
+    font-size: $h3-font-size;
+}
+
+.skills__subtitle {
+    font-size: $small-font-size;
+}
+
+.skills__arrow {
+    margin-left: auto;
+    transition: 0.7s;
+}
+
+.skills__list {
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+}
+
+.skills__title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.skills_name {
+    font-size: $normal-font-size;
+    font-weight: $font-medium;
+}
+
+.skills__bar,
+.skills__percentage {
+    height: 5px;
+    border-radius: 0.25rem;
+}
+
+.skills__bar {
+    background-color: $secondary-blue;
+}
+
+.skills__percentage {
+    display: block;
+    background-color: $primary-blue;
+}
+
+.skills__html {
+    width: 90%;
+}
+.skills__css {
+    width: 80%;
+}
+.skills__js {
+    width: 30%;
+}
+.skills__bootstrap {
+    width: 80%;
+}
+.skills__vuetify {
+    width: 30%;
+}
+.skills__responsive {
+    width: 90%;
+}
+.skills__php {
+    width: 50%;
+}
+.skills__java {
+    width: 30%;
+}
+.skills__laravel {
+    width: 40%;
+}
+.skills__vue {
+    width: 40%;
+}
+.skills__node {
+    width: 40%;
+}
+
+.skills__close .skills__list {
+    height: 0;
+    overflow: hidden;
+}
+
+.skills__open .skills__list {
+    height: max-content;
+    margin-bottom: 2rem;
+}
+
+.skills__open .skills__arrow {
+    transform: rotate(-180deg);
+}
 /**
  * Footer
  *
@@ -206,13 +320,8 @@ footer {
     flex-shrink: 0;
 }
 
-// .m-footer {
-//     margin-top: 8rem;
-// }
-
 .bg-footer {
-    // background-color: $primary-green;
-    background-color: $primary-purple;
+    background-color: $primary-blue;
 }
 
 .text-footer {
@@ -258,7 +367,7 @@ footer {
     }
 
     .nav__link:hover {
-        color: $primary-purple;
+        color: $primary-blue;
     }
 
     .movil {
@@ -279,9 +388,6 @@ footer {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 570px) {
-    // main {
-    //     height: calc(80vh - 80px);
-    // }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -297,7 +403,7 @@ footer {
         color: #000 !important;
     }
     .nav__link:hover {
-        color: $primary-purple !important;
+        color: $primary-blue !important;
     }
 
     .uil-size {
