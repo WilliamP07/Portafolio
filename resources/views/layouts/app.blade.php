@@ -7,11 +7,11 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Portfolio') }}</title>
+    <title>{{ config('app.name', 'William P.') }}</title>
 
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}" defer></script>
-    <script src="{{ asset('js/main.js') }}" defer></script>
+    <script src="{{ mix('js/main.js') }}" defer></script>
 
 
     <!-- Fonts -->
@@ -20,7 +20,7 @@
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
     <!-- Favicon -->
-    {{-- <link rel="icon" href="{{ asset('img/Favicon.png') }}"> --}}
+    <link rel="icon" href="{{ asset('img/code-slash.svg') }}">
 
 
 </head>
@@ -29,11 +29,11 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm navbar-menu">
             <div class="container">
                 <a class="navbar-brand nav-text" href="{{ url('/') }}">
-                    {{ 'William' }}
+                    {{ 'WILLIAM P.' }}
                 </a>
               
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <i class="bi bi-grid-fill uil-size uil-app"></i>
+                <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                    <i class="bi bi-grid-fill uil-size uil-app "></i>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -47,22 +47,22 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link nav__link"  href="{{ url('/') }}"><i class="uil-size bi bi-house-door-fill"></i>{{ __('Home') }}</a>
+                                <a class="nav-link nav__link"  href="{{ url('/') }}"><i class="uil-size bi bi-house-door-fill"></i>{{ __('Inicio') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav__link " href="{{ url('/about') }}"><i class="uil-size bi bi-person-fill"></i>{{ __('About') }}</a>
+                                <a class="nav-link nav__link " href="{{ url('/about') }}"><i class="uil-size bi bi-person-fill"></i>{{ __('Sobre mí') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav__link " href="{{ url('/skills') }}"><i class="uil-size bi bi-file-earmark-code-fill"></i>{{ __('Skills') }}</a>
+                                <a class="nav-link nav__link " href="{{ url('/skills') }}"><i class="uil-size bi bi-file-earmark-code-fill"></i>{{ __('Habilidades') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav__link " href="{{ url('/services') }}"><i class="uil-size bi bi-briefcase-fill"></i>{{ __('Services') }}</a>
+                                <a class="nav-link nav__link " href="{{ url('/services') }}"><i class="uil-size bi bi-briefcase-fill"></i>{{ __('Servicios') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav__link " href="{{ url('/portfolio') }}"><i class="uil-size bi bi-image-fill"></i>{{ __('Porfolio') }}</a>
+                                <a class="nav-link nav__link " href="{{ url('/portfolio') }}"><i class="uil-size bi bi-image-fill"></i>{{ __('Portafolio') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav__link " href="{{ url('/contact') }}"><i class="uil-size bi bi-envelope-fill"></i>{{ __('Contact') }}</a>
+                                <a class="nav-link nav__link " href="{{ url('/contact') }}"><i class="uil-size bi bi-envelope-fill"></i>{{ __('Contacto') }}</a>
                             </li>
                            
                             {{-- @if (Route::has('login'))
@@ -104,20 +104,18 @@
             @yield('content')
         </main>
 
-    </div>
-    
-        <footer class="bg-footer footer">
+        <footer class="bg-footer footer m-footer">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-4 col-sm-4 pt-4 pb-2 responsive-m">
-                        <h1 class="text-footer">William</h1>
-                        <p class="mb-0 text-footer">Frontend developer</p>
+                        <h1 class="text-footer">William P.</h1>
+                        <p class="mb-0 text-footer">FrontEnd - BackEnd Developer</p>
                     </div>
                     <div class="col-12 col-md-4 col-sm-8 pt-3 pb-1 responsive-m">
                         <div class="row">
-                            <div class=" col-md-4 col-sm-4"><a class="nav-link text-footer p-0 pt-1 pb-1" href="{{ url('/services') }}">Services</a></div>
-                            <div class=" col-md-4 col-sm-4"><a class="nav-link text-footer p-0 pt-1 pb-1" href="{{ url('/portfolio') }}">Portfolio</a></div>
-                            <div class=" col-md-4 col-sm-4"><a class="nav-link text-footer p-0 pt-1 pb-1" href="{{ url('/contact') }}">Contact</a></div>
+                            <div class=" col-md-4 col-sm-4"><a class="nav-link text-footer p-0 pt-1 pb-1" href="{{ url('/services') }}">Servicios</a></div>
+                            <div class=" col-md-4 col-sm-4"><a class="nav-link text-footer p-0 pt-1 pb-1" href="{{ url('/portfolio') }}">Portafolio</a></div>
+                            <div class=" col-md-4 col-sm-4"><a class="nav-link text-footer p-0 pt-1 pb-1" href="{{ url('/contact') }}">Contacto</a></div>
                         </div>
                     </div>
                     <div class="col-12 col-md-4 col-sm-4 pt-3 pb-1 responsive-m align-icon">
@@ -129,13 +127,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="pt-2 pb-2">
+                <div class="pt-4 pb-2">
                     <p class="text-center text-footer-copy mb-0">
                       &copy; 2022 Todos Los Derechos Reservados | William Pineda
                     </p>
                 </div>
             </div>
-        </footer>
-     
+        </footer> 
+    </div>
 </body>
 </html>
