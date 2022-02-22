@@ -107,6 +107,13 @@ img {
     border-color: #fff;
 }
 
+.nav__link:hover {
+    color: $primary-blue;
+    // border-bottom: 2px solid $primary-blue;
+    // margin-bottom: 0;
+    // padding-bottom: 0;
+}
+
 /**
  * Home
  *
@@ -276,7 +283,7 @@ img {
     width: 80%;
 }
 .skills__vuetify {
-    width: 30%;
+    width: 50%;
 }
 .skills__responsive {
     width: 90%;
@@ -296,6 +303,15 @@ img {
 .skills__node {
     width: 40%;
 }
+.skills__sql {
+    width: 50%;
+}
+.skills__mysql {
+    width: 75%;
+}
+.skills__mongo {
+    width: 30%;
+}
 
 .skills__close .skills__list {
     height: 0;
@@ -310,6 +326,133 @@ img {
 .skills__open .skills__arrow {
     transform: rotate(-180deg);
 }
+
+/**
+ * Qualification
+ *
+ * -------------------------------------------------------------------
+ */
+.qualification__tabs {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.qualification__button {
+    font-size: $h3-font-size;
+    font-weight: $font-medium;
+    cursor: pointer;
+}
+
+.qualification__button:hover {
+    color: $primary-blue;
+}
+
+.qualification__icon {
+    font-size: 1.8rem;
+    margin-right: 0.8rem;
+}
+
+.qualification__data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+
+.qualification__title {
+    font-size: $normal-font-size;
+    font-weight: $font-medium;
+}
+
+.qualification__subtitle {
+    display: inline-block;
+    font-size: $small-font-size;
+    margin-bottom: 1rem;
+}
+
+.qualification__calendar {
+    font-size: $smaller-font-size;
+    // color: $secondary-blue;
+}
+
+.qualification__rounder {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: $primary-blue;
+    border-radius: 50%;
+}
+
+.qualification__line {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: $primary-blue;
+    transform: translate(6px, -7px);
+}
+
+.qualification [data-content] {
+    display: none;
+}
+
+.qualification__active[data-content] {
+    display: block;
+}
+
+.span {
+    color: $primary-blue;
+}
+
+/**
+ * Contact me
+ *
+ * -------------------------------------------------------------------
+ */
+
+.contact__information {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.contact__icon {
+    font-size: 2rem;
+    color: $primary-blue;
+    margin-right: 1.2rem;
+    cursor: pointer;
+}
+
+.contact_title {
+    font-size: $h3-font-size;
+    font-weight: $font-medium;
+}
+
+.contact__subtitle {
+    font-size: $small-font-size;
+}
+
+.contact__label {
+    font-size: $smaller-font-size;
+    font-weight: $font-bold;
+}
+
+.contact__content {
+    background-color: $light-blue;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem 0.25rem;
+    margin-bottom: 10px;
+}
+
+.contact__input {
+    width: 100%;
+    background-color: $light-blue;
+    color: $black;
+    font-size: $normal-font-size;
+    border: none;
+    outline: none;
+    padding: 0.25rem 0.5rem 0.5rem 0;
+}
+
 /**
  * Footer
  *
@@ -364,10 +507,6 @@ footer {
         font-size: $small-font-size;
         color: #000 !important;
         font-weight: $font-semi-bold;
-    }
-
-    .nav__link:hover {
-        color: $primary-blue;
     }
 
     .movil {

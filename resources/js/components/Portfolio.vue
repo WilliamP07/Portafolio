@@ -1,21 +1,17 @@
 <template>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <div class="card">
-          <div class="card-header">Portfolio</div>
-
-          <div class="card-body">I'm an portfolio component.</div>
-        </div>
+  <v-container>
+    <!-- Portfolio section -->
+    <v-row class="pb-4">
+      <div class="text-center mb-3">
+        <h1 class="title-home">Portafolio</h1>
+        <h5 class="subtitle-home">Trabajo más reciente</h5>
       </div>
-    </div>
-  </div>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
 export default {
-  mounted() {
-    console.log("Component mounted.");
-  },
+  mounted() {},
 };
 </script>

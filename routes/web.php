@@ -33,7 +33,7 @@ Route::get('/contact', function () {
     return view('contact.index');
 });
 
-Route::get('/services', function () {
+Route::get('/experience', function () {
     return view('business.index');
 });
 
