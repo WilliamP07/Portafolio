@@ -56,8 +56,11 @@
                                 <a class="nav-link nav__link " href="{{ url('/skills') }}"><i class="uil-size bi bi-file-earmark-code-fill"></i>{{ __('Habilidades') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav__link " href="{{ url('/services') }}"><i class="uil-size bi bi-briefcase-fill"></i>{{ __('Servicios') }}</a>
+                                <a class="nav-link nav__link " href="{{ url('/experience') }}"><i class="uil-size bi bi-briefcase-fill"></i>{{ __('Experiencia') }}</a>
                             </li>
+                            {{-- <li class="nav-item">
+                                <a class="nav-link nav__link " href="{{ url('/experience') }}"><i class="uil-size bi bi-briefcase-fill"></i>{{ __('Servicios') }}</a>
+                            </li> --}}
                             <li class="nav-item">
                                 <a class="nav-link nav__link " href="{{ url('/portfolio') }}"><i class="uil-size bi bi-image-fill"></i>{{ __('Portafolio') }}</a>
                             </li>
@@ -113,7 +116,7 @@
                     </div>
                     <div class="col-12 col-md-4 col-sm-8 pt-3 pb-1 responsive-m">
                         <div class="row">
-                            <div class=" col-md-4 col-sm-4"><a class="nav-link text-footer p-0 pt-1 pb-1" href="{{ url('/services') }}">Servicios</a></div>
+                            <div class=" col-md-4 col-sm-4"><a class="nav-link text-footer p-0 pt-1 pb-1" href="{{ url('/experience') }}">Experiencia</a></div>
                             <div class=" col-md-4 col-sm-4"><a class="nav-link text-footer p-0 pt-1 pb-1" href="{{ url('/portfolio') }}">Portafolio</a></div>
                             <div class=" col-md-4 col-sm-4"><a class="nav-link text-footer p-0 pt-1 pb-1" href="{{ url('/contact') }}">Contacto</a></div>
                         </div>
