@@ -57,7 +57,7 @@
                 </div>
                 <div>
                   <h3 class="qualification__title">
-                    Téc. de ingeniería en Sistemas Informáticos
+                    Téc. en ingeniería de Sistemas Informáticos
                   </h3>
                   <span class="qualification__subtitle">ITCA - FEPADE</span>
                   <div class="qualification__calendar text-muted">

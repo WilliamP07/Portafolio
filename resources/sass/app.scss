@@ -167,7 +167,7 @@ img {
 }
 
 .home__blob-img {
-    width: 160px;
+    width: 200px;
 }
 
 /**
@@ -478,6 +478,18 @@ footer {
 
 .text-footer-copy {
     color: #d7dbdd;
+}
+
+/**
+ * Dark theme
+ *
+ * -------------------------------------------------------------------
+ */
+
+body.dark-theme {
+    $primary-blue: red;
+    $secondary-blue: yellow;
+    $light-blue: #e0e7ea;
 }
 
 /*==================== MEDIA QUERIES ====================*/

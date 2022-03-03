@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-row class="row">
-      <v-col cols="12" sm="12" md="5" class="pt-0 desktop" align="center">
+      <!-- <v-col cols="12" sm="12" md="5" class="pt-0 desktop" align="center">
         <svg
           class="home__blob"
           viewBox="0 0 200 187"
@@ -27,11 +27,11 @@
               class="home__blob-img"
               x="20"
               y="28"
-              xlink:href="/img/perfil.png"
+              xlink:href="/img/hacker_edit.jpg"
             />
           </g>
         </svg>
-      </v-col>
+      </v-col> -->
       <v-col cols="2" sm="2" md="2">
         <li class="no-list-style">
           <a href="" class="home__social-icon"
@@ -88,9 +88,9 @@
             />
             <image
               class="home__blob-img"
-              x="20"
-              y="28"
-              xlink:href="/img/perfil.png"
+              x="4"
+              y="-10"
+              xlink:href="/img/hacker_edit.jpg"
             />
           </g>
         </svg>
